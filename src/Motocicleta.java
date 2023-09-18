@@ -35,6 +35,7 @@ public class Motocicleta extends BaseVeiculosTerrestre{
     @Override
     public void Imprimir() {
 
+        System.out.println("\n\n");
         System.out.println("------------------------");
         System.out.println("Motocicleta:");
         System.out.println("Código: " +this.codigo);
@@ -61,7 +62,6 @@ public class Motocicleta extends BaseVeiculosTerrestre{
         System.out.println("Quantidade de Cilindros: " +this.cilindros);
         System.out.println("Tipo do Motor: " +this.tipoMotor);
         System.out.println("------------------------");
-        System.out.println("\n");
         
     }
 

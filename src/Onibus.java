@@ -3,8 +3,6 @@ public class Onibus extends BaseVeiculosTerrestre {
     private int capacidadeTotal;
     private Boolean acessibilidade;
     private Boolean arCondicionado;
-    private Boolean wifi;
-    private Boolean banheiro;
     
     public int getCapacidadeTotal() {
         return capacidadeTotal;
@@ -24,18 +22,6 @@ public class Onibus extends BaseVeiculosTerrestre {
     public void setArCondicionado(Boolean arCondicionado) {
         this.arCondicionado = arCondicionado;
     }
-    public Boolean getWifi() {
-        return wifi;
-    }
-    public void setWifi(Boolean wifi) {
-        this.wifi = wifi;
-    }
-    public Boolean getBanheiro() {
-        return banheiro;
-    }
-    public void setBanheiro(Boolean banheiro) {
-        this.banheiro = banheiro;
-    }
    
     public Onibus(int codigo, String chassi, String nome, String modelo, int anoModelo, int anoFabricacao,
             String fabricante, String nomeProprietario, String modelo2, int eixos, double pesoLiquido, double pesoTotal,
@@ -48,14 +34,12 @@ public class Onibus extends BaseVeiculosTerrestre {
         this.capacidadeTotal = capacidadeTotal;
         this.acessibilidade = acessibilidade;
         this.arCondicionado = arCondicionado;
-        this.wifi = wifi;
-        this.banheiro = banheiro;
     }
    
     @Override
     public String toString() {
         return "Onibus [capacidadeTotal=" + capacidadeTotal + ", acessibilidade=" + acessibilidade + ", arCondicionado="
-                + arCondicionado + ", wifi=" + wifi + ", banheiro=" + banheiro + "]";
+                + arCondicionado + "]";
     }
     @Override
     public void Imprimir() {
@@ -63,7 +47,6 @@ public class Onibus extends BaseVeiculosTerrestre {
         System.out.println("------------------------");
         System.out.println("Ônibus:");
         System.out.println("Código: " +this.codigo);
-        System.out.println("Chassi: " +this.chassi);
         System.out.println("Nome: " +this.nome);
         System.out.println("Modelo: " +this.modelo);
         System.out.println("Ano do Modelo: " +this.anoModelo);
@@ -86,8 +69,6 @@ public class Onibus extends BaseVeiculosTerrestre {
         System.out.println("Capacidade Total: " +this.capacidadeTotal);
         System.out.println("Acessibilidades: " +this.acessibilidade);
         System.out.println("Ar Condicionado: " +this.arCondicionado);
-        System.out.println("WI-Fi: " +this.wifi);
-        System.out.println("Banheiro: " +this.banheiro);
         System.out.println("------------------------");
         System.out.println("\n");
         

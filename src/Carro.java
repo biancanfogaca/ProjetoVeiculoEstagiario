@@ -72,7 +72,7 @@ public class Carro extends BaseVeiculosTerrestre {
         System.out.println("Airbag: " +this.airbags);
         System.out.println("Sensores: " +this.sensor);
         System.out.println("------------------------");
-        System.out.println("\n");
+     
 
     }
 

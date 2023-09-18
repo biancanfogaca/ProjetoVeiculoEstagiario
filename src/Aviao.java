@@ -1,7 +1,6 @@
 public class Aviao extends BaseVeiculos {
 
     private String numeroDeSerie;
-    private Float alcanceMax;
     private Float altitudeMax;
     private Float velocidadeMax;
     private int assentos;
@@ -13,12 +12,6 @@ public class Aviao extends BaseVeiculos {
     }
     public void setNumeroDeSerie(String numeroDeSerie) {
         this.numeroDeSerie = numeroDeSerie;
-    }
-    public Float getAlcanceMax() {
-        return alcanceMax;
-    }
-    public void setAlcanceMax(Float alcanceMax) {
-        this.alcanceMax = alcanceMax;
     }
     public Float getAltitudeMax() {
         return altitudeMax;
@@ -55,7 +48,6 @@ public class Aviao extends BaseVeiculos {
                 qtdeOcupantes);
         this.assentos = assentos;
         this.numeroDeSerie = numeroDeSerie;
-        this.alcanceMax = alcanceMax;
         this.altitudeMax = altitudeMax;
         this.velocidadeMax = velocidadeMax;
         this.capacidadeTotal = capacidadeTotal;
@@ -63,6 +55,7 @@ public class Aviao extends BaseVeiculos {
     @Override
     public void Imprimir() {
        
+        System.out.println("\n\n");
         System.out.println("------------------------");
         System.out.println("Avião:");
         System.out.println("Código: " +this.codigo);
@@ -86,18 +79,15 @@ public class Aviao extends BaseVeiculos {
         System.out.println("Quantidade de Ocupantes: " +this.qtdeOcupantes);
         System.out.println("Assentos: " +this.assentos);
         System.out.println("Número de Série: " +this.numeroDeSerie);
-        System.out.println("Alcance Máximo: " +this.alcanceMax);
         System.out.println("Altitude Máxima: " +this.altitudeMax);
         System.out.println("Velocidade Máxima: " +this.velocidadeMax);
         System.out.println("Capacidade Total: " +this.capacidadeTotal);
         System.out.println("------------------------");
-        System.out.println("\n");
     }
    
     @Override
     public String toString() {
-        return "Aviao [assentos=" + assentos + ", numeroDeSerie=" + numeroDeSerie + ", alcanceMax=" + alcanceMax
-                + ", altitudeMax=" + altitudeMax + ", velocidadeMax=" + velocidadeMax + ", capacidadeTotal="
+        return "Aviao [assentos=" + assentos + ", numeroDeSerie=" + numeroDeSerie + ", altitudeMax=" + altitudeMax + ", velocidadeMax=" + velocidadeMax + ", capacidadeTotal="
                 + capacidadeTotal + "]";
     }
 

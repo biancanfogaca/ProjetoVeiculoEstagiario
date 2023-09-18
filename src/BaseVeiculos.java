@@ -1,10 +1,9 @@
 public abstract class BaseVeiculos extends BaseDadosComuns implements Impressao {
 
-    protected String modelo;
-   
+ 
     protected double pesoLiquido;
     protected double pesoTotal;
-    protected String chassi;
+    protected String modelo;
     protected String tipoCombustivel;
     protected String estadoUF;
     protected String cidadeUF;
@@ -15,14 +14,7 @@ public abstract class BaseVeiculos extends BaseDadosComuns implements Impressao 
     protected int qtdeMotores;
     protected int qtdeOcupantes;
     
-    @Override
-    public String getModelo() {
-        return modelo;
-    }
-    @Override
-    public void setModelo(String modelo) {
-        this.modelo = modelo;
-    }
+  
     public double getPesoLiquido() {
         return pesoLiquido;
     }
@@ -34,6 +26,14 @@ public abstract class BaseVeiculos extends BaseDadosComuns implements Impressao 
     }
     public void setPesoTotal(double pesoTotal) {
         this.pesoTotal = pesoTotal;
+    }
+    @Override
+    public String getModelo() {
+        return modelo;
+    }
+    @Override
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
     }
     public String getTipoCombustivel() {
         return tipoCombustivel;
